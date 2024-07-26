@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header{
+        background-color: burlywood;
+        text-align: center;
+        padding: 30PX;
+        color: brown;
+    }
+    nav{
+        float: left;
+        width: 40%;
+        height: 500px;
+        background:rgb(164, 48, 48);
+        padding: 10px;
+    }
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    article{
+        float: left;
+        padding: 20px;
+        width: 60%;
+        background-color: rgb(184, 134, 68);
+        height: 500px;
+    }
+    section::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+    footer{
+        background-color: aquamarine;
+        text-align: center;
+        color: black;
+        padding: 20px;
+     }
+    @media(max-width:700px){
+        nav,
+        article{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MY HTML</h1>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="/prince.html">link virat-kohli</a></li>
+                <li><a href="/image.html">link CANADA</a></li>
+                <li><a href="/pre.html">link CRICKET</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>virat-kohli</h2>
+            <p>hii this is <i>virat-kohli</i>.he is indian cricketar. he is right arm batter.he was captain of indian team</p>
+            <h2>canada</h2>
+            <p>Canada is a country in North America.<br> Its ten provinces and three territories extend from the Atlantic Ocean to the Pacific Ocean and northward into the Arctic Ocean, making it the world's second-largest country by total area, with the world's longest coastline. Its border with the United States is the world's longest international land border. The country is characterized by a wide range of both meteorologic and geological regions. It is a sparsely inhabited country of 40 million people, the vast majority residing south of the 55th parallel in urban areas. Canada's capital is Ottawa and its three largest metropolitan areas are Toronto, Montreal, and Vancouver.</p>
+            <h2>virat-kohli 82*</h2>
+            <p>This is virat 82* not-out video.This is cricket video</p>           
+        </article>
+        <details>
+            <summary>click for more details</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam molestias nesciunt ea vel magni aliquam tempore illo, odio culpa placeat sapiente nostrum error nobis earum dolorem laboriosam, qui facere velit libero. Adipisci sunt quae labore beatae iure totam accusantium, aut doloribus corporis dolore repellat sit illo laudantium voluptatum consequatur, fugit consectetur earum culpa. Accusantium alias maiores aspernatur cumque dolores sed?</p>
+        </details>
+    </section>
+    <footer>
+        <p>PRINCE</p>
+    
+    </footer>
+</body>
+</html>

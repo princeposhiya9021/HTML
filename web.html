@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        header{
+            background-color: aquamarine;
+            text-align: center;
+            height: 150px;
+            padding-top: 80px;
+            /* max-height: 200px; */
+    
+        }
+        header h1{
+            text-transform: uppercase;
+            color: brown;
+        }
+        header p{
+            text-transform: capitalize;
+            font-size: large;
+            padding: 20px;
+        }
+        nav{ 
+            display: flex;
+            background-color: rgb(32, 28, 42);            
+            border: 3px solid rgb(23, 23, 33);
+           
+            
+        }        
+    
+        nav a{
+            text-align: center;
+            margin: 10px;          
+            text-transform: capitalize;
+            text-decoration: none;
+            color: rgb(226, 9, 9);
+            padding: 10px 30px;
+        }
+        nav a:hover{
+            background-color: #ddd;
+            color: #333;
+        }
+        .aa{
+            display: flex;
+            /* flex-wrap: wrap; */
+            flex-direction: row;
+
+        }
+        .a1{
+            flex: 24%;
+            text-transform: capitalize;
+            padding: 10px;
+            background-color: #ddd;
+        }
+        .a1 img{
+            height: 300px;
+            width: 250px
+        }
+        .a1 h2 {
+            margin: 5px;
+            padding: 10px;
+        }
+        
+        .a1 h5{
+            padding-bottom: 15px;
+            margin-left: 18px ;
+            font-size: medium;
+            
+        }
+        .b1{
+            flex: 70%;
+            background-color: wheat;
+            padding:10px;
+            text-transform: capitalize;
+
+        } 
+        .b1 img{
+            
+            height: 300px;
+            width: 100%; 
+       }
+       .b1 h2{
+        text-transform: uppercase;
+          margin: 5px;
+        padding: 10px;
+       }
+       .b1 h5{
+        padding-bottom: 15px;
+            margin-left: 15px ;
+            font-size: medium;
+
+       }
+       footer{
+        background-color:aquamarine;
+        text-align: center;
+        padding: 35px;
+       }
+       @media screen and (max-width:600px){
+        .aa, nav{
+            flex-direction: column;
+        }
+        
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>my website</h1>
+        <p>with a flexibal layout</p>
+    </header>
+    <nav>
+     <a href="">link</a> 
+     <a href="">link</a> 
+     <a href="">link</a> 
+     <a href="">link</a> 
+        
+    </nav>
+    <div class="aa">
+       <div class="a1">
+        <h2>about me</h2>
+        <h5>photo me</h5>
+        <div class="i1"><img src="/my img1.jpeg" alt=""></div><br>
+        <p>Some text about me:
+            my name is <b> prince poshiya</b>.
+            i am b.com student.           
+            i am living in ahmedabad city.
+            i like plaing cricket and kabbadi
+        </p>
+        <h2>more img</h2>
+        <div class="i1"><img src="/my img.jpeg" alt=""></div><br>
+       
+       </div>
+       <div class="b1">
+        <h2>title heading</h2>
+        <h5>title descripstion, feb 19, 2024</h5>
+        <div class="i2"><img src="hd1.jpg" alt=""></div><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptas pariatur impedit at similique inventore magnam cumque in error nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum officia nisi corrupti ipsa voluptatem id, quaerat laudantium? Dignissimos, assumenda libero.</p>
+        <h2>title heading </h2>
+        <h5>title descripstion, feb 19, 2024</h5>
+        <div class="i2"><img src="/backimg.jpg" alt=""></div><br>
+        <p>some text.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab in dolores corporis eveniet vitae reiciendis commodi? Itaque, fuga? Ratione alias perspiciatis maiores beatae nemo, veniam delectus excepturi voluptatum nesciunt temporibus.
+        </p>
+
+
+       </div>
+    </div>
+    <footer>
+        <h2> Footer</h2>
+    </footer>
+</body>
+</html>

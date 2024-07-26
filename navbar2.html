@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY NAVBAR</title>
+    <style>
+nav{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px;
+
+}
+ul{
+    list-style: none;
+   
+}
+li{
+    display: inline-block;  
+     margin: 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+a{
+    display: block;
+    color: rgb(154, 13, 13);
+    text-decoration: none;
+    padding: 10px;
+
+
+
+}
+.aa{
+     display:none;
+    position: absolute;
+    background-color: rgb(124, 237, 200);
+    box-shadow: 0px 15px 18px 10px rgb(31, 31, 32);
+    z-index: 1;
+    padding: 20px;
+   min-width: 50px;
+}
+li:hover .aa{
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about us</a></li>
+            <li class="dropdown"><a href="">services</a>
+                <div class="aa">
+                <a href="">web designing</a>
+                <a href="">ceo</a>
+                <a href="">maekrting</a>
+            </div> 
+            </li>
+            <li><a href="">content</a></li>
+            <li><a href="">sign in</a></li>
+            <li><a href="">log in</a></li>
+            
+        </ul>
+    </nav>
+    
+</body>
+</html>
