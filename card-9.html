@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>caed-9</title>
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+ 
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .prince{
+            height: 300px;
+            width: 450px;
+            border: 5px solid yellowgreen;
+            box-shadow: 10px 10px 10px black;
+           
+            filter: grayscale(100%);
+            transition: 0.7s;
+            transform: rotatez(-30deg);
+            cursor: pointer;
+            
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .prince:hover{
+            transform: rotatez(0deg);
+            scale: 1.2;
+            filter: grayscale(0);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="prince">
+        <img src="/my img3.jpeg" alt="">
+    </div>
+    
+</body>
+</html>

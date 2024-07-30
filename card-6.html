@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card-6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+           
+
+
+        }
+        .aa{
+            height: 350px;
+            width: 280px;
+            border: 2px solid red;
+            border-radius: 25px;
+            background-color: skyblue;
+            box-sizing: border-box;
+            /* overflow: hidden; */
+            position: relative;
+            cursor: pointer;
+            
+                    
+        }
+        img{position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 25px;
+        }
+        .text{
+            position: absolute;
+            box-sizing: border-box;
+            
+            height: 80px;
+            width: 100%;
+            bottom: 0;
+            background-color: blueviolet;
+            border-radius:60px 60px 25px 25px;
+            text-align: center;
+            transition: 2s;
+        }
+        p{
+            padding: 10px;
+            border: 2px solid black;
+            background-color: darkcyan;
+            opacity: 0;
+            transition: 5s;
+           
+        }
+        h1{
+            padding-top: 12px;
+        }
+        .card:hover .text{
+            height: 100%;
+            width: 100%;
+            border-radius: 25px;
+            padding: 10px;
+            
+        }
+        button{
+            padding: 10px;
+            width: 70%;
+            color: snow;
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color: darkolivegreen;
+            opacity: 0;
+            transition: 5s;
+            cursor: pointer;
+            
+            
+            
+        }
+        .card:hover p{
+            opacity: 1;
+            
+        }
+        .card:hover button{
+            opacity: 1;
+            margin-top: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="aa">
+            <img src="https://image3.mouthshut.com/images/ImagesR/2017/7/Somnath-Jyotirlinga-Temple-Veraval-925753174-8055817-1.jpg" alt="">
+            <div class="text">
+                <h1>SOMNATH TEMPLE</h1>
+                <p>The Somanath temple (IAST: somanātha) or Deo Patan, is a Hindu temple located in Prabhas Patan, Veraval in Gujarat, India. It is one of the most sacred pilgrimage sites for Hindus and is the first among the twelve jyotirlinga shrines of Shiva.</p>
+
+                <button>PLAN TRIP</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

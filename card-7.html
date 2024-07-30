@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            transition: 0.5s;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rosybrown;
+        }
+        .aa{
+            height: 200px;
+            width: 400px;
+            border: 2px solid red;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+
+
+        }
+        img{
+            height: 100%;
+            width: 100%;
+
+        }
+        .top{
+            position: absolute;
+            height: 25%;
+            border-radius: 0px 0px 0px 150px;
+            right: 0;
+            width: 25%;
+            background-color: burlywood;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+        }
+        .aa:hover .top{
+            height: 100%;
+            width: 100%;
+            border-radius: 0px;
+            text-align: center;
+        }
+        h1{
+            padding: 20px;
+            opacity: 0;
+            scale: 0;
+        }
+        .aa:hover h1{
+            opacity: 1;
+            scale: 1;
+        }
+        .aa:hover img{
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <div class="aa">
+        <div class="top">
+            <h1>word by "PRINCE POSHIYA"</h1>
+        </div>
+        <img src="https://wallpapercave.com/wp/wp2530970.jpg" alt="">
+
+    </div>
+
+</body>
+</html>

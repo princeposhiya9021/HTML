@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        form{
+            border: 2px solid rgb(247, 245, 245);
+            padding: 5px;
+            color: snow;
+            margin: 100px auto;
+            max-width: 550px;
+            text-transform: capitalize;
+            background-color: black;
+            border-radius: 20px;
+            
+        }
+        h1{
+            text-align: center;
+            text-transform: capitalize;
+            font-size: xx-large;
+        }
+        
+
+        
+         input[type="text"] , input[type="number"],input[type="email"]{
+            border: 2px rgb(10, 10, 10) solid ;
+            border-radius: 8px;
+            width: 250px;
+            height: 40px;
+            margin: 6px;
+            /* text-align: center; */
+            padding: 5px;
+
+        }
+        h3,h4,label{
+            font-size: x-large;
+
+        }
+        input[type="submit"]{
+            background-color: blue;
+            color: snow;
+            width: 120px;
+            height: 40px;
+            margin-left: 38%;
+
+        }
+        select{
+            font-size: larger;
+            width: 200px;
+            height: 50px;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+        .f1 input[type="text"]{
+            width: 90%;
+        }
+        
+
+        
+        
+    </style>
+</head>
+<body>   
+    <form>
+       <h1>survey from:</h1><hr>
+       <div class="ll">
+        <h3>customer name</h3>
+       <input type="text" placeholder="enter your frist name">
+       <input type="text" placeholder="enter your last frist name">
+    </div>
+    
+        <h4>address</h4>
+        <div class="f1">
+        <input type="text" placeholder="street address" >
+        <input type="text" placeholder="street address 2">
+        </div>
+               <input type="text" placeholder="city">
+    
+        <input type="text" placeholder="state"><br>
+        <input type="text" placeholder="zip"><br><br>
+       
+      <div>
+        <label for="a1">select country</label><br>
+        <select name="" id="a1">
+            <option value="">india</option>
+            <option value="">canda</option>
+            <option value="">usa</option>
+            <option value="">pakistan</option>
+            <option value="">afghanistan</option>
+            <option value="">nepal</option>
+            <option value="">africa</option>
+            <option value="">bagladesh</option>
+            <option value="">thailead</option>
+            <option value="">u.a.e</option>
+            <option value="">englead</option>
+            <option value="">brazil</option>
+            <option value="">netherland</option>
+            <option value="">ierland</option>
+            <option value="">newzeland</option>
+            <option value="">bali</option>
+            <option value=""></option>
+            <br><br>
+            </select>
+
+
+
+
+      </div>
+      <div>
+        <h4>contact</h4>
+      <input type="number" placeholder="phone" >
+      <input type="email" placeholder="email"><br><br>
+      </div>
+      <div>
+        <input type="submit" ondblclick="">
+      </div>
+
+    
+
+
+    </form>    
+</body>
+</html>

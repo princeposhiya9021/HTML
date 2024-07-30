@@ -4,66 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
     <style>
         *{
-           background-color: antiquewhite;
+            margin: 0;
+            padding: 0;
         }
-form{
-    max-width: 400px;
-    margin: 50px auto;
-}
-input[type="text"],input[type="password"]{
-    border: 2px inset rgb(63, 12, 231);
-    border-radius: 5px;
-    padding: 5px;
-    background-color: blanchedalmond;
-    display: block;
-    margin-bottom: 2px;
-    
-}
-input[type="submit"] {
-    background-color: rgb(129, 129, 238);
-    color: snow;
-    cursor: pointer;
-    width: 120px;
-    padding: 5px;
-}
-input[type="submit"]:hover {
-    background-color: rgb(7, 7, 82);
-    color: snow;
-}
-input[type="text"]:hover {
-    background-color: black;
-    color: snow;
-}
-input[type="password"]:hover {
-    background-color: black;
-    color: snow;
-}
-input::placeholder{
-    color: rgb(222, 16, 16);
-}
-label{
-    text-transform: capitalize;
-    font-size: x-large;
-}
+        form{
+          margin: 100px auto;
+        
+         
+
+        }
+        .a1{
+            height: 500px;
+            width: 500px;
+            padding: 35px 35px 0px 35px;
+            border: 2px solid red;
+            
+            background-color: rgb(240, 238, 236);
+            text-transform: capitalize;
+        }
+        input[type="text"],input[type="email"],input[type="password"]{
+            border-bottom: 5px solid purple;
+            height: 20px;
+            width: 100%;
+            padding: 2px;
+        }
+        button{
+            padding: 5px;
+            margin:5px 5PX 15PX 55PX;
+            height: 50px;
+            width: 80%;
+            cursor: pointer;
+             background-color: rebeccapurple;
+             color: white;
+
+
+        }
+        img{
+            width: 100%;
+            height: 200px;
+            border-radius: 25px;
+        }
+        P{
+            padding: 10PX;
+        }
+       
+
     </style>
+</head>
+<body>
+    <form>
+        <div class="a1">
+            <div class="b1">
+                <div class="c1">
+                    <img src="https://www.501commons.org/learn/for-training-providers/create-your-account-button/image" alt="">
+                </div>
+                <label for="">full name</label><br>
+                <input type="text" placeholder="alexander parkinson"><br><br>
+
+            <label for="">email</label><br>
+            <input type="email"><br><br>
+
+            <input type="password" placeholder="password"><br><br>
+
+            <button>get started</button><br>
+            <p>by signing up you are agreeing to our <a href="#">terms and condition</a> </p>
+
+
+
+
+
+            </div>
+        </div>
+    </form>
 </body>
-<form>
-    <fieldset>
-        <legend>my from</legend>
-    <label for="">fristname</label>
-    <input type="text" placeholder="enter name"><br><br>
-
-    <label for="">lastname</label>
-    <input type="text" name="" id="" placeholder="enter name"><br><br>
-
-    <label for="">password</label>
-    <input type="password" placeholder="enter password"><br><br>
-
-    <input type="submit" value="submit">
-    </fieldset>
-</form>
 </html>

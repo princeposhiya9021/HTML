@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prince</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            width: 100%;
+        }
+        nav{
+            
+            background-color: rgb(39, 126, 180);
+            list-style: none;
+            display: flex;
+            padding: 20px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;        
+            position:absolute;
+            top: 0px;
+            width: 97%;
+            opacity: 0.5;
+            
+        
+        }
+         a,#ii{
+            margin-left:75px ;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+                   
+        }
+        .bg{
+            background-image: url(https://images.herzindagi.info/image/2022/May/clothes-to-repeat-fashion-tips.jpg);
+            height: 670px;
+            width: 100%;
+            background-repeat: no-repeat;                        
+            background-size: cover;
+            position: relative;
+            background-attachment: fixed;
+        }
+        #heder h1{
+            position: absolute;
+            top: 190px;
+            left: 100px;
+            color: white;
+            font-size: 50px;
+
+        }
+        #heder h4{
+            position: absolute;
+            top: 345px;
+            left: 100px;
+            color: white;
+            font-size:x-large; 
+        }
+        #b1{
+            position: absolute;
+            top: 420px;
+            padding: 12px;
+            text-transform: uppercase;
+            cursor: pointer;
+            left: 100px;
+            font-size: large;
+                
+        }
+        #b2{
+            position: absolute;
+            top: 420px;
+            padding: 12px;
+            text-transform: uppercase;
+            cursor: pointer;
+            left: 270px;
+            font-size: large;  
+            background-color: transparent;
+            border: 2px solid white; 
+        }
+        #b1:hover{
+            background-color: black;
+            color: white;
+        }
+        #b2:hover{
+            background-color: white;
+            color: black;
+        }
+        #logo{
+            margin: 100px 20px;
+            height: 250px;
+            display: flex;
+
+            
+        }
+        #logo img{
+            width: 200px;
+            margin-left: 50px;
+        }
+        .imges {
+            display: grid;
+            grid-template-columns: auto auto auto; 
+            margin:100px 100px;         
+          
+
+        }
+        .imges img{
+            height: 400px;
+            width: 400px;
+            opacity:.8 ;
+            margin: 20px;
+        }
+        .im1,.im2,.im3{
+            position: relative;
+        }
+        .im1 h3{
+            position: absolute;
+            bottom:200px;
+            left: 50px;
+        }
+        .im1 p{
+            position: absolute;
+            bottom: 130px;
+            left: 50px;
+
+            
+        }
+        .im1 button{
+            position: absolute;
+            top: 330px;
+            left: 50px;
+            padding: 10px;
+            background-color:white;
+            color: black;
+            text-transform: uppercase;
+            font-size: large;
+            cursor: pointer;
+        }
+        .im2 h3{
+            position: absolute;
+            bottom:200px;
+            left: 50px;
+        }
+        .im2 p{
+            position: absolute;
+            bottom: 130px;
+            left: 50px;
+        }
+        .im2 button{
+            position: absolute;
+            top: 330px;
+            left: 50px;
+            padding: 10px;
+            background-color:white;
+            color: black;
+            text-transform: uppercase;
+            font-size: large;
+            cursor: pointer;
+        }
+        .im3 h3{
+            position: absolute;
+            bottom:200px;
+            left: 50px;
+        }
+        .im3 p{
+            position: absolute;
+            bottom: 130px;
+            left: 50px;
+        }
+        .im3 button{
+            position: absolute;
+            top: 330px;
+            left: 50px;
+            padding: 10px;
+            background-color:white;
+            color: black;
+            text-transform: uppercase;
+            font-size: large;
+            cursor: pointer;
+        }
+        #product{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            margin: 100px 10px;
+            padding: 10px;
+        }
+        #product img{
+            height: 350px;
+            width: 250px;
+            margin: 80px 0px;
+        }
+        #product p{
+            opacity: .5;
+            padding: 5px;
+        }
+        #bg2{
+            background-image: url(https://cdn.shopify.com/s/files/1/1562/9681/files/5F7A2696wide_1000x.jpg?v=1663746550);
+            padding-top: 200PX;
+            
+            height: 600px;
+            width: 100%;
+            background-repeat: no-repeat;                        
+            background-size: cover;
+            position: relative;
+            background-attachment: fixed; 
+           
+
+        }
+        .bogo {
+            position: relative;
+            
+            
+        }
+        .bogo h1{
+            position: absolute;
+            top: 260px;
+            color: white;
+            left: 100px;
+            font-size: 60px;
+        }
+        .bogo h3{
+            position: absolute;
+            top: 200px;
+            color: white;
+            left: 110px;
+            font-size: xx-large;
+        }
+        .bogo p{
+            position: absolute;
+            top: 350px;
+            color: white;
+            left: 100px;
+            font-size: larger;
+        }
+        .bogo h2{
+            position:absolute;
+            top: 400px;
+            color: white;
+            left: 100px;
+            font-size: large;
+        }
+        #bu5{
+            position: absolute;
+            padding: 12px;
+            background-color: white;
+            top: 450px;
+            left: 100px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-size: larger;
+        }
+        #bu5:hover{
+            background-color: black;
+            color: white;
+        }
+        #yy{
+            padding-top: 250px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin: 0px 90px;
+           
+        }
+        #yy img{
+            height: 100px;
+            margin-left: 100px;
+        }
+        .jj{
+            padding-top: 200px;     
+        margin: 50px 80px 150px 80px;
+        }
+        footer{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin: 50px;
+            padding: 20px;
+            text-transform: capitalize;
+        }
+        footer p{
+            opacity: 0.7;
+            padding-top: 10px;
+        }
+        footer h1,h2{
+            margin: 20px 0px;
+        }
+        #bu6{ padding: 10px;
+            text-transform: uppercase;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: large;
+
+        }
+        footer p:hover{
+            color: lightseagreen;
+            cursor: pointer;
+            
+        }
+        input{
+            padding: 10px;
+            text-transform: capitalize;
+        }
+        
+
+        
+
+        
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="kunjan">
+    <div class="bg"></div>
+    <nav>
+        
+        <li><a href=""  style="margin-left: 10px;">dnk</a></li>
+        <li><a href="#product">everything</a></li>
+        <li><a href="">women</a></li>
+        <li><a href="" >men</a></li>
+        <li><a href="" style="margin-right: 90px;" >accessories</a></li>
+        <li><a href="#ff1" style="margin-left:150px;">about</a></li>
+        <li><a href="">contact us</a></li>
+        <li><a href="">$0.00</a></li>
+        <i class="fa fa-shopping-bag" aria-hidden="true" id="ii"></i>
+        <i class="fa fa-user" aria-hidden="true" id="ii"></i>
+    </nav>
+    <div id="heder">
+        <h1>Raining Offers <br>
+            For Hot Summer!</h1>
+        <h4>25% Off On All Products</h4>
+        <button id="b1">shop now</button>
+        <button id="b2">find more</button>
+</div> 
+    
+<div id="logo">
+    <img src="https://thefader-res.cloudinary.com/private_images/c_limit,w_1024/c_crop,h_1040,w_1920,x_0,y_40,f_auto,q_auto:eco/zara_vnaem4/zara_vnaem4.jpg" alt="" style="width:330px;">
+    <!-- <img src="https://logos-world.net/wp-content/uploads/2020/04/Tommy-Hilfiger-Logo.png" alt=""> -->
+    <img src="https://th.bing.com/th/id/OIP.522pvl7Uu91MZcvqPaz8XAHaHa?rs=1&pid=ImgDetMain" alt="">
+    <img src="https://brandlogos.net/wp-content/uploads/2022/05/allen_solly-logo_brandlogos.net_0bqec.png" alt="">
+    <img src="https://i.pinimg.com/originals/20/25/d3/2025d386ef1a47eb7918338210c24da1.png" alt="">
+    <img src="https://th.bing.com/th/id/OIP.SCOQ0FH57vta8zKT48YSEgAAAA?rs=1&pid=ImgDetMain" alt="">
+</div>
+<div class="imges">
+    <div class="im1">
+        <img src="https://storage.googleapis.com/tc46storage/2021/07/f667c7a0-5-reasons-shein-is-crowd-fav-3-640x480.jpg" alt="">
+        <h3>20% Off On Tank Tops</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit. Delectus, est!</p>
+        <button  class="bu1">shop now</button>
+    </div>
+
+    <div class="im2">
+        <img src="https://image.freepik.com/free-photo/portrait-handsome-young-man-with-shopping-bags_220507-19441.jpg" alt="">
+        <h3>Latest Eyewear For You</h3>
+        <p>Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. Architecto, et.</p>
+        <button class="bu2">shop now</button>
+
+    </div>
+    <div class="im3">
+        <img src="https://i.pinimg.com/originals/d4/b3/5b/d4b35b5d4f4f38c787872c8b70f926d0.jpg" alt="">
+        <h3>Let's Lorem Suit Up!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
+        <button class="bu3">check out</button>
+    </div>
+</div>
+
+<div id="center">
+  <center>  <h1> Featured Products</h1> </center>
+</div>
+
+<div class="product">
+    <div id="product">
+    <div class="pr1">
+        <img src="https://www.sneakersnstuff.com/images/50188/open_graph.jpg" alt="">
+        <h2>jordan red shoes </h2>
+        <p>men</p>
+        <h4>$220.00</h4>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+    <div class="pr2">
+        <img src="https://m.media-amazon.com/images/I/617bmOe35tL._SY695_.jpg" alt="">
+        <h2>campus blue shoes</h2>
+        <p>men</p>
+        <h4>$150.00</h4>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+    <div class="pr3">
+        <img src="https://m.media-amazon.com/images/I/41iIBJ8pLQL.jpg" alt="">
+        <h2>Lymio Men's Fit Jeans</h2>
+        <p>men</p>
+        <h4>$100.00</h4>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+    <div class="pr4">
+        <img src="https://m.media-amazon.com/images/I/61fj59tt9eL._SY879_.jpg" alt="">
+        <h2>INKD Women Jean</h2>
+        <p>women</p>
+        <h4>$80.00</h4>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+    <div class="pr5">
+        <img src="https://m.media-amazon.com/images/I/71y2S7w7q3L._SY879_.jpg" alt="">
+        <h2>INKD Women's Stretchable Flare Jeans</h2>
+        <p>women</p>
+        <h4>$120.00</h4>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+    <div class="pr6">
+        <img src="https://m.media-amazon.com/images/I/71ZqIMS9USL._SY879_.jpg" alt="">
+        <h2>Short Shirt for Wome</h2>
+        <p>women</p>
+        <h4>$120.00</h4>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+    <div class="pr7">
+        <img src="https://m.media-amazon.com/images/I/41ceLKPnlDL._SY695_.jpg" alt="">
+        <h2> GIVA 925 Silver Heart <br> Necklace</h2>
+        <p>women</p>
+        <h4>$250.00</h4>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+    <div class="pr8">
+        <img src="https://m.media-amazon.com/images/I/41Bs3qqX+LL._SY625_.jpg" alt="">
+        <h2>Silver Pink American Diamond Butterfly  <br> 
+            Design</h2>
+        <p>women</p>
+        <h4>$150.00</h4>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+
+    </div>
+    <div class="pr9">
+     <img src="https://m.media-amazon.com/images/I/61JL7hwTWQL._SY695_.jpg" alt="">
+     <h2>Hidesign Women's Handbag (Red)</h2>
+     <p>women</p>
+     <h4>$120.00</h4> 
+     <i class="fa fa-star-o" aria-hidden="true"></i>
+     <i class="fa fa-star-o" aria-hidden="true"></i>
+     <i class="fa fa-star-o" aria-hidden="true"></i>
+     <i class="fa fa-star-o" aria-hidden="true"></i>
+     <i class="fa fa-star-o" aria-hidden="true"></i>  
+    </div>
+    <div class="pr10">
+        <img src="https://m.media-amazon.com/images/I/61BTXVwzbEL._SL1152_.jpg" alt="">
+        <h2>Contacts Men's Genuine Leather Wallet</h2>
+        <p>men</p>
+        <h4>$80.00</h4>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+
+    </div>
+    </div>
+</div>
+
+<div class="bogo">
+   <div id="bg2"></div>
+    <h3>Limited Time Offer</h3>
+    <h1>Special Edition</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, vero?</p>
+    <h2>Buy This T-shirt At 20% Discount, Use Code OFF20</h2>
+    <button id="bu5">shop now</button>
+   </div>
+
+<div id="yy">
+    <div id="y1">
+        <img src="https://media.istockphoto.com/vectors/earth-globe-in-one-continuous-line-drawing-round-world-map-in-simple-vector-id1321128933?k=20&m=1321128933&s=612x612&w=0&h=qalXW1J2s__ygLzwI5WwT-p-UzgeT9A5iPIl7vENdWY=" alt="">
+        <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo</p>
+    </div>
+    <div class="y2">
+        <img src="https://www.charak.ae/wp-content/uploads/2023/01/1-Quality-product.png" alt="">
+        <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo</p>
+    </div>
+    <div class="y3">
+        <img src="https://cdn2.iconfinder.com/data/icons/flat-seo-web-ikooni/128/flat_seo3-07-512.png" alt="">
+        <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo</p>
+    </div>
+    <div class="y4">
+        <img src="https://cdn-icons-png.flaticon.com/512/8232/8232419.png" alt="">
+        <p>It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo</p>
+    </div>
+</div>
+<div class="jj">
+ <hr><br><br>   <h1>SALE UP TO 70% OFF FOR ALL CLOTHES & FASHION ITEMS, ON ALL BRANDS. </h1><br><br>
+ <hr>
+
+</div>
+<footer>
+    <div id="ff1">
+        <h1>DNK</h1>
+        <h2>The best look anytime, anywhere.</h2>
+    </div>
+    <div class="ff2">
+        <h2>For Her</h2>
+        <p>women Jeans</p>
+        <p>top and Shirt</p>
+        <p>women Jackets</p>
+        <p>Heels and flats</p>
+        <p>women accessories</p>
+    </div>
+    <div class="ff3">
+        <h2>for him</h2>
+        <p>men Jeans</p>
+        <p>men Shirt</p>
+        <p>men Jackets</p>
+        <p>men accessories</p>
+        <p>men shoes</p>
+    </div>
+    <div class="ff4">
+        <h2>subscribe</h2>
+        <input type="email" placeholder="enetr your  email">
+        <br>
+        <button id="bu6">subscribe</button>
+    </div>
+
+</footer>
+    </div>
+</body>
+</html>

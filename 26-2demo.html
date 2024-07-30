@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>new card learning`</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            transition: .5s;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            align-items: center;
+            background-color: lightskyblue;
+        }
+
+        .card {
+            width: 330px;
+            height: 220px;
+            overflow: hidden;
+            cursor: pointer;
+            background-color: black;
+            position: relative;
+            border-radius: 15px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .top {
+            background-color: darkolivegreen;
+            height: 20%;
+            width: 20%;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0px 0px 0px 250px;
+            position: absolute;
+            text-align: center;
+        }
+
+        .card:hover .top {
+            width: 100%;
+            height: 100%;
+            border-radius: 0px;
+        }
+
+        h3 {
+            opacity: 0;
+            scale: 0;
+            font-size: 0px;
+        }
+
+        .card:hover h3 {
+            opacity: 1;
+            scale: 1;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="top">
+            <h3>THIS IS WORK DONE BY PRINCE AND RONAK TODAY</h3>
+
+        </div>
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="">
+    </div>
+
+</body>
+
+</html>

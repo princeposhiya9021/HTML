@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>see</title>
+   <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    *{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.card{
+	width: 250px;
+	height: 330px;
+	background-color: rgb(0, 0, 0);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 15px;
+	position: relative;	
+	cursor: pointer;	
+}
+
+img{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	opacity: .7;
+}
+
+.face{
+	background-color: rgb(128, 208, 240);
+	width: 100%;
+	height: 140px;
+	bottom: 0px;
+	border-radius: 100%  100% 15px 15px;
+	position: absolute;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: .5s;
+}
+
+.card:hover .face{
+	height: 330px;		
+	border-radius: 15px;
+}
+h2{
+	transition: .9s;
+	top: 0;
+	text-transform: uppercase;
+}
+.card:hover h2{
+	position: relative;
+	top: -120px;
+
+}
+
+p{
+	position: absolute;	
+	top: 0px;
+	color: transparent;
+	padding: 10px;
+	margin: 10px;
+	box-sizing: border-box;
+	border-radius: 15px;
+	transition: .5s;
+	
+}
+
+.card:hover p{
+	top:70px;
+	color: black;
+	background-color: darkseagreen;
+}
+
+button{
+		background-color: transparent;
+		position: absolute;	
+		color: transparent;
+		border: transparent;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: .5s;
+
+}
+
+button:hover{
+	background-color: rgb(31, 0, 15);
+	/* scale: 1.1; */
+	font-size: 18px;
+}
+
+.card:hover button{
+	top:255px;
+	padding: 15px 30px;
+	color:white;
+	background-color: rgb(0, 68, 0);
+}
+</style>
+<body>
+   
+  <div class="main">
+     <div class="card">
+        <img src="https://images.unsplash.com/photo-1600664356348-10686526af4f?auto=format&fit=crop&q=80&w=1475&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <div class="face">
+           <h2>singapore</h2>
+           <p>Singapore, officially the Republic of Singapore, is an island country and city-state in maritime Southeast With a multicultural population and in recognition of the cultural identities of the major ethnic groups within the nation.</p>
+
+           <button>PLAN TRIP</button>
+        </div>
+     </div>
+  </div>
+
+</body>
+</html>
